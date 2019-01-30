@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{76666304-E741-4BE4-9857-48D14EC8F946}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication4</RootNamespace>
+    <AssemblyName>WindowsFormsApplication4</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.CodeParser.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\cek.cs" />
+    <Compile Include="Model\urun.cs" />
+    <Compile Include="View\BilgilerForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\BilgilerForm1.Designer.cs">
+      <DependentUpon>BilgilerForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\kredi.cs" />
+    <Compile Include="Model\Musteri.cs" />
+    <Compile Include="Model\nakit.cs" />
+    <Compile Include="Model\odeme.cs" />
+    <Compile Include="Model\siparis.cs" />
+    <Compile Include="Model\siparisDetay.cs" />
+    <Compile Include="View\musteriListeForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\musteriListeForm1.Designer.cs">
+      <DependentUpon>musteriListeForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MüsteriForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MüsteriForm.Designer.cs">
+      <DependentUpon>MüsteriForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SiparisDetayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SiparisDetayForm.Designer.cs">
+      <DependentUpon>SiparisDetayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\siparisListeleForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\siparisListeleForm1.Designer.cs">
+      <DependentUpon>siparisListeleForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SiparisVerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SiparisVerForm.Designer.cs">
+      <DependentUpon>SiparisVerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Siparsilerim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Siparsilerim.Designer.cs">
+      <DependentUpon>Siparsilerim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UrunEkleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UrunEkleForm.Designer.cs">
+      <DependentUpon>UrunEkleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\urunGuncelleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\urunGuncelleForm.Designer.cs">
+      <DependentUpon>urunGuncelleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UrunListeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UrunListeForm.Designer.cs">
+      <DependentUpon>UrunListeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UrunSilForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UrunSilForm.Designer.cs">
+      <DependentUpon>UrunSilForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\yonetici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\yonetici.Designer.cs">
+      <DependentUpon>yonetici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="View\BilgilerForm1.resx">
+      <DependentUpon>BilgilerForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\musteriListeForm1.resx">
+      <DependentUpon>musteriListeForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MüsteriForm.resx">
+      <DependentUpon>MüsteriForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SiparisDetayForm.resx">
+      <DependentUpon>SiparisDetayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\siparisListeleForm1.resx">
+      <DependentUpon>siparisListeleForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SiparisVerForm.resx">
+      <DependentUpon>SiparisVerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Siparsilerim.resx">
+      <DependentUpon>Siparsilerim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UrunEkleForm.resx">
+      <DependentUpon>UrunEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\urunGuncelleForm.resx">
+      <DependentUpon>urunGuncelleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UrunListeForm.resx">
+      <DependentUpon>UrunListeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UrunSilForm.resx">
+      <DependentUpon>UrunSilForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\yonetici.resx">
+      <DependentUpon>yonetici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controller\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
